@@ -18,6 +18,7 @@
 }
 .main{
     overflow: auto;
+    
     background: lavender;
     width: 400px;
     height: auto;
