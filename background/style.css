@@ -1,0 +1,77 @@
+.canvas {
+margin: 100px auto 100px;
+width: 60%;
+text-align: center;
+}
+@media (max-width:750px) {
+    .canvas{
+        width: 100%;
+    }
+}
+@media (max-width:850px) {
+    .canvas{
+        width: 80%;
+    }
+}
+.button {
+width: 100px;
+height: 100px;
+margin: 3px;
+border: solid black 2px;
+display: inline-block;
+}
+
+#grey {
+background: grey;
+}
+#white {
+background: white;
+}
+#blue {
+background: blue;
+}
+#yellow {
+background: yellow;
+}
+#red {
+background: red;
+}
+#green {
+background: green;
+}
+#pink{
+background: pink;
+}
+#powderblue {
+background: powderblue;
+}
+#aqua {
+background: aqua;
+}
+#blueviolet {
+background: blueviolet;
+}
+#brown {
+background: brown;
+}
+#cornflowerblue {
+background: cornflowerblue;
+}
+#orange {
+background: orange;
+}
+#gold {
+background: gold;
+}
+#greenyellow{
+background: greenyellow;
+}
+#violet {
+background: violet;
+}
+#purple {
+background: purple;
+}
+#palegreen {
+background: palegreen;
+}

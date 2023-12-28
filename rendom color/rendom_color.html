@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random colour generator</title>
+    <style>
+        body{
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+            background-color: #212121; 
+        }
+        .btn{
+            padding: 5px 30px;
+            font-size: 30px;
+            font-weight: 700;
+            border-radius: 10px;
+            margin: 0px 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Press Start button should change the Background color every second</h1>
+    <!--  Creating two buttons for start and stop -->
+    <button class="btn" id="start">Start</button>
+    <button class="btn" id="stop">Stop</button>
+    <h1>Press Stop button to stop changing background colours</h1>
+
+    <script>
+        const randomColor = function () {
+            const hex = '0123456789ABCDEF'; 
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += hex[Math.floor(Math.random() * 16)]; //Using random function to generate a random colors
+            }
+            return color;
+        };
+        let intervalId;
+        const startChangingColor = function () {
+            if (!intervalId) {
+                intervalId = setInterval(changeBgColor, 1000);
+            }
+            function changeBgColor() {
+                document.body.style.backgroundColor = randomColor();
+            }
+        };
+        
+        const stopChangingColor = function () {
+            clearInterval(intervalId);
+            intervalId = null;
+        };
+        document.querySelector('#start').addEventListener('click', startChangingColor);
+        document.querySelector('#stop').addEventListener('click', stopChangingColor);
+    </script>
+</body>
+</html>
