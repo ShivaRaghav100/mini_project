@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Clock</title>
     <style>
         body {
@@ -33,7 +31,6 @@
         <div id="banner"><span>Your local Date & time</span></div>
         <div id="clock"></div>
     </div>
-
     <script>
       //Add scripting and and querySelected to select the div
         const clock = document.querySelector('#clock');
@@ -43,8 +40,6 @@
             let date =  new Date ();   // Using date function to get current date
             clock.innerHTML= date.toLocaleDateString() +' - '+date.toLocaleTimeString();
         },1000)
-        
     </script>
-
 </body>
 </html>
